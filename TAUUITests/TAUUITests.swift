@@ -32,7 +32,7 @@ class TAUUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func test_VerifyMainscreenLabel() throws {
+    func test_VerifyJoiningLabel() throws {
         
         let app = XCUIApplication()
         app.launch()
