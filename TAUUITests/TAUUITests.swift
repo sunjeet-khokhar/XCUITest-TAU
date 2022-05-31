@@ -35,10 +35,14 @@ class TAUUITests: BaseTestClass {
     func test_VerifyJoiningLabel() throws {
            app.textFields["city"].tap()
            app.textFields["city"].typeText("Malerkotla")
+           checkAppReadiness()
            app.buttons["enrollButton"].tap()
            XCTAssert(app.staticTexts["Thanks for Joining!"].exists)
     }
     
+    func checkAppReadiness() {
+        XCTAssert(app.buttons["enrollButton"].exists,"Enrollment button not found")
+    }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
