@@ -13,6 +13,7 @@
 		9B5BC715220F55D20047CFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC714220F55D20047CFA4 /* Assets.xcassets */; };
 		9B5BC718220F55D20047CFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC716220F55D20047CFA4 /* LaunchScreen.storyboard */; };
 		9B5BC723220F55D20047CFA4 /* TAUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC722220F55D20047CFA4 /* TAUTests.swift */; };
+		B306AFC528459CBA003591F9 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306AFC428459CBA003591F9 /* BaseClass.swift */; };
 		B308999E282F89610056C75D /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308999D282F89610056C75D /* TAUUITests.swift */; };
 		B30899A0282F89610056C75D /* TAUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308999F282F89610056C75D /* TAUUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		9B5BC71E220F55D20047CFA4 /* TAUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BC722220F55D20047CFA4 /* TAUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUTests.swift; sourceTree = "<group>"; };
 		9B5BC724220F55D20047CFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B306AFC428459CBA003591F9 /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
 		B308999B282F89610056C75D /* TAUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B308999D282F89610056C75D /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
 		B308999F282F89610056C75D /* TAUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				B308999D282F89610056C75D /* TAUUITests.swift */,
+				B306AFC428459CBA003591F9 /* BaseClass.swift */,
 				B308999F282F89610056C75D /* TAUUITestsLaunchTests.swift */,
 			);
 			path = TAUUITests;
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B308999E282F89610056C75D /* TAUUITests.swift in Sources */,
+				B306AFC528459CBA003591F9 /* BaseClass.swift in Sources */,
 				B30899A0282F89610056C75D /* TAUUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

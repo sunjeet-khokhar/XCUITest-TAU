@@ -8,7 +8,7 @@
 
 import XCTest
 
-class TAUUITests: XCTestCase {
+class TAUUITests: BaseTestClass {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -33,16 +33,12 @@ class TAUUITests: XCTestCase {
     }
     
     func test_VerifyJoiningLabel() throws {
-        
-        let app = XCUIApplication()
-        app.launch()
-        app.textFields["city"].tap()
-        app.textFields["city"].typeText("Malerkotla")
-        app.buttons["enrollButton"].tap()
-        XCTAssert(app.staticTexts["Thanks for Joining!"].exists)
-        app.terminate()
-        
+           app.textFields["city"].tap()
+           app.textFields["city"].typeText("Malerkotla")
+           app.buttons["enrollButton"].tap()
+           XCTAssert(app.staticTexts["Thanks for Joining!"].exists)
     }
+    
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
