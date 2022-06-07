@@ -1,16 +1,25 @@
 import Foundation
 import XCTest
-class BaseTestClass: XCTestCase {
+class HomeScreen {
+    let appTest: XCUIApplication
+    let cityField: XCUIElement
+    let enrollButton: XCUIElement
+    let confirmText: XCUIElement
     
-    var app = XCUIApplication()
-    
-    override func setUp() {
-        super.setUp()
-        app.launch()
+    init(app: XCUIApplication) {
+        self.appTest = app
+        cityField = appTest.textFields["city"]
+        enrollButton = appTest.buttons["enrollButton"]
+        confirmText = appTest.staticTexts["Thanks for Joining!"]
     }
-    override func tearDown() {
-        super.tearDown()
-        app.terminate()
-    }
     
+    func setUp() {
+        appTest.launch()
+    }
+    func tearDown() {
+        appTest.terminate()
+    }
+    func checkAppReadiness() {
+        XCTAssert(appTest.buttons["enrollButton"].exists,"Enrollment button not found")
+    }
 }
