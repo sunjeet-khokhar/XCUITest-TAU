@@ -1,5 +1,6 @@
 
 import XCTest
+
 class TAUUITests: XCTestCase {
     
     func test_VerifyJoiningLabel() throws {
