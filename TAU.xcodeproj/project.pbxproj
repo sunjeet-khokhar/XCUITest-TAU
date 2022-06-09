@@ -15,6 +15,7 @@
 		9B5BC723220F55D20047CFA4 /* TAUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC722220F55D20047CFA4 /* TAUTests.swift */; };
 		B308999E282F89610056C75D /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308999D282F89610056C75D /* TAUUITests.swift */; };
 		B3BDA775284F1D3E009798BE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BDA774284F1D3E009798BE /* HomeScreen.swift */; };
+		B3BDA77C28517B71009798BE /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BDA77B28517B71009798BE /* HelperFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B308999B282F89610056C75D /* TAUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B308999D282F89610056C75D /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
 		B3BDA774284F1D3E009798BE /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		B3BDA77B28517B71009798BE /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		B308999C282F89610056C75D /* TAUUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B3BDA77A28517B5C009798BE /* Helpers */,
 				B3BDA776284F1DA0009798BE /* App_Screens */,
 				B308999D282F89610056C75D /* TAUUITests.swift */,
 			);
@@ -132,6 +135,14 @@
 				B3BDA774284F1D3E009798BE /* HomeScreen.swift */,
 			);
 			path = App_Screens;
+			sourceTree = "<group>";
+		};
+		B3BDA77A28517B5C009798BE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B3BDA77B28517B71009798BE /* HelperFunctions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B308999E282F89610056C75D /* TAUUITests.swift in Sources */,
+				B3BDA77C28517B71009798BE /* HelperFunctions.swift in Sources */,
 				B3BDA775284F1D3E009798BE /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

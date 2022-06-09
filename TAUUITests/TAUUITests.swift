@@ -3,20 +3,19 @@ import XCTest
 
 class TAUUITests: XCTestCase {
     
+    // why does  the below throw an error ?
+    //let app = XCUIApplication()
+    let homeScreen = HomeScreen(app: XCUIApplication())
+    let helper = HelperFunctions()
+    
     func test_VerifyJoiningLabel() throws {
-           let app = XCUIApplication()
-           let homeScreen = HomeScreen(app: app)
-           homeScreen.setUp()
-           homeScreen.cityField.tap()
-           homeScreen.cityField.typeText("Malerkotla Majnu")
-           homeScreen.tearDown()
-           
-           //   setUp()
-           //   app.textFields["city"].tap()
-           //   app.textFields["city"].typeText("Malerkotla")
-           //   checkAppReadiness()
-           //   app.buttons["enrollButton"].tap()
-           //   XCTAssert(app.staticTexts["Thanks for Joining!"].exists)
-           //   tearDown()
+        homeScreen.setUp()
+        homeScreen.cityField.tap()
+        homeScreen.cityField.typeText("Malerkotla Majnu")
+        XCTAssert(homeScreen.enrollButton.exists,"Enrollment button not found")
+        homeScreen.enrollButton.tap()
+        let joiningResult = helper.elementExistence(element: homeScreen.confirmationText)
+        XCTAssert(joiningResult,"Successful joining message not found within timeout period")
+        homeScreen.tearDown()
        }
 }

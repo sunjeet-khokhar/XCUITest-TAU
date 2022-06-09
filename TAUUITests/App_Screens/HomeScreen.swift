@@ -4,13 +4,13 @@ class HomeScreen {
     let appTest: XCUIApplication
     let cityField: XCUIElement
     let enrollButton: XCUIElement
-    let confirmText: XCUIElement
+    let confirmationText: XCUIElement
     
     init(app: XCUIApplication) {
         self.appTest = app
         cityField = appTest.textFields["city"]
         enrollButton = appTest.buttons["enrollButton"]
-        confirmText = appTest.staticTexts["Thanks for Joining!"]
+        confirmationText = appTest.staticTexts["Thanks for Joining!"]
     }
     
     func setUp() {
@@ -19,7 +19,5 @@ class HomeScreen {
     func tearDown() {
         appTest.terminate()
     }
-    func checkAppReadiness() {
-        XCTAssert(appTest.buttons["enrollButton"].exists,"Enrollment button not found")
-    }
+
 }
